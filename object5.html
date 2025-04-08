@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>자바스크립트 객체</h1>
+    <p>자바스크립트의 속성 (property)에 접근하는 2가지 방식</p>
+    <p id="demo1"></p>
+    <p id="demo2"><p>
+
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            id : 5566
+        };
+
+        //display
+        document.getElementById("demo1").innerHTML = "the last name is " + person.lastName;
+        document.getElementById("demo2").innerHTML = "the last name is " + person["lastName"];
+    </script>
+</body>
+</html>

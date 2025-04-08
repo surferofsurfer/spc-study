@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>빈 객체에 데이터 추가하기</title>
+</head>
+<body>
+<p id="demo"></p>
+
+<script>
+    const person = {};
+
+    person.city = "goonza";
+    person.job = "programmer";
+    person.workedTimeYear = 3;
+
+    document.getElementById("demo").innerHTML = "사는 곳은 " + person.city + " 이며, " + "연차는 " + person.workedTimeYear + " 입니다.";
+</script>
+    
+</body>
+</html>

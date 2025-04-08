@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Arithmetic</h1>
+<h2>The -- Operator</h2>
+
+<p id="demo"></p>
+
+<script>
+let x = 5;
+let y = '8';
+
+y = Number(y);  
+
+// 재선언 할 수 는 없고, 다시 할당만 할 수 있군.
+
+let z = x + y;
+
+document.getElementById('demo').innerHTML = z;
+// 피연산자중 하나라도 문자열이라면, 모두 문자가 되어 58이 된다.
+</script>
+
+</body>
+</html>

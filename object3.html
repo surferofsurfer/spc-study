@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>자바스크립트 객체를 만들어봅시다</h1>
+    <h2>Literal 을 사용합시다</h2>
+    <p>리터럴은 값을 나타냅니다. 변수가 아니라 문자 그대로 스크립트에 제공한 고정된 값이죠</p>
+    <p id="demo"></p>
+
+    <script>
+        const person = {firstNmae:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+        document.getElementById("demo").innerHTML = person.firstNmae + "" + person.lastName + " is" + person.age + " years.old";
+    </script>
+</body>
+</html>

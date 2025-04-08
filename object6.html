@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>자바스크립트 객체</h1>
+    <h2>객체 메소드</h2>
+    <p> 메소드란, 속성 값이 저장된 함수 정의입니다.</p>
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            firstName : "John",
+            lastName : "Doe",
+            id : 5566,
+            fullName: function() {
+                return this.firstName + " " + this.lastName;}
+        }
+        // this 라는 방법을 씀으로써 하드코딩을 줄이고 있다.
+        document.getElementById("demo").innerHTML = person.fullName();
+    </script>
+</body>
+</html>

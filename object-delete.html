@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>객체 키 속성 삭제</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            firstName : "john",
+            lastName: "Doe"
+        };
+
+        delete person.firstName;
+
+        document.getElementById("demo").innerHTML = person.firstName
+    </script>
+</body>
+</html>

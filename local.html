@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascrip Function</h1>
+
+    <p>Outside myFunction() carName is undefined</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        let text = "outside: " + typeof carName;
+        document.getElementById("demo1").innerHTML = text;
+        // demo1 에 text 라는 변수를 innerHTML 로 삽입하겠다는 의미
+
+
+        function myFunction () {
+            let carName = "Volvo";
+            let text = "inside: " + typeof carName + " " + carName
+        document.getElementById("demo2").innerHTML = text;
+        // demo1 에 text 라는 변수를 innerHTML 로 삽입하겠다는 의미
+        }
+
+        myFunction();
+    </script>
+</body>
+</html>

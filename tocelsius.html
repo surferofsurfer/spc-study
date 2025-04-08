@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>섭씨 온도 구하기</title>
+</head>
+<body>
+    <h1>화씨를 섭씨로 바꿔줍니다.</h1>
+    <p>아래에 온도가 표시 됩니다</p>
+    <p id="demo"></p>
+    
+    <script>
+        function toCelsius (f) {
+            return (f-32)/1.8;
+        }
+
+        let Celsius = toCelsius (77);
+        document.getElementById("demo").innerHTML=Celsius;
+
+        //let Celsius = toCelsius; 인자 값이 없어서 결과가 도출되지 않는다.
+    </script>
+</body>
+</html>
